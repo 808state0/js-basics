@@ -15,6 +15,20 @@ console.log(pet);
 *
 * Each value should be a String. 
 **/
+var firstName = " Michael-Henry ";
+console.log(firstName);
+
+var lastName = " Anguay ";
+console.log(lastName);
+
+var birthPlace = " Oahu ";
+console.log(birthPlace);
+
+var favoriteFood = "Potato";
+console.log(favoriteFood);
+
+var bestMovie = "Scott pilgram vs the world"
+console.log(bestMovie);
 
 
 /**
@@ -25,6 +39,17 @@ console.log(pet);
 *
 * Each value should be a Number
 **/
+var favoriteNumber = 3;
+console.log(favoriteNumber);
+
+var currentYear = 2017;
+console.log(currentYear);
+
+var thatOnePrinceSong = 1999;
+console.log(thatOnePrinceSong);
+
+var tokyoOlympics = 2020;
+console.log(tokyoOlympics);
 
 
 /**
@@ -36,6 +61,19 @@ console.log(pet);
 * Each value should be a Boolean
 **/
 
+var likesMcDonalds = (10>9);
+console.log(likesMcDonalds);
+
+var watchedMrRobot = (1===0);
+console.log(watchedMrRobot);
+
+var ranMarathon = (100<0);
+console.log(ranMarathon);
+
+var wrestledABear = (2<1);
+console.log(wrestledABear);
+
+
 
 /**
 * #4
@@ -46,11 +84,22 @@ console.log(pet);
 * Each value should be Null 
 **/
 
+var completedPrepClass = null;
+console.log(completedPrepClass);
+
+var traveledToMars = null;
+console.log(traveledToMars);
+
+var scoredTDinNFL = null;
+console.log(scoredTDinNFL);
+
 
 /*
 #5. 
 * What is the difference between null and undefined? Type your answer in two or three commented-out sentences.
 */
+
+// Null is a varable to where you set to change, as undefined indicates that a variable has not been assigned a value.
 
 
 /**
@@ -64,6 +113,24 @@ console.log(pet);
 * Declare a variable named `duets` and assign it an array containing 3 nested arrays, each containing the names of 2 singers or bands.
 * Declare a variable named `mixPlate` and assign it an array containing different data types of your choosing.
 **/
+var plateLunch= ["pizza", "laulau", "Ramin", "Steak","icecream"];
+console.log(plateLunch);
+
+var fruitBasket= ["grape","orange","pear","peach","pineapple"];
+console.log(fruitBasket);
+
+var westCoast =["California", "Arizona", "Oregon", "Washington", "Idaho", "Montana", "New Mexico", "Colorado", "Wyoming", "Utah"];
+console.log(westCoast);
+
+var lotteryResult = ["100", "33", "25", "123", "3", "1", "23", "55", "1000", ];
+console.log(lotteryResult);
+
+var duets = [["Chris Brown, Usher"],["William Singe, Alex Aiono"], ["John Mayer, Jack Johnson"]];
+console.log(duets);
+
+var mixPlate = ["Dodgeball", "CounterStrike", "Soccer", "33", "The Never Ending Story"];
+console.log(mixPlate);
+
 
 
 
@@ -77,6 +144,11 @@ What is the index position of carrot cake? Please print this item to the console
 What is the index position of lemon bars? Please print this item to the console.
 */
 
+var partyList = ["carrot cake", "rocky road ice cream", "mochiko chicken", "orange tang", "lemon bars"];
+
+console.log( partyList.length );
+console.log( partyList[0] );
+console.log( partyList[4] );
 
 
 /*
@@ -92,8 +164,22 @@ What is the index position of lemon bars? Please print this item to the console.
 *Declare a new variable, `mariahStory`. Assign it the value of concatenating the variables `mariahCareyAge`, `favSneaker`, `favLoveSong` and `coffeeShop` to create the following sentence:
 At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 */
+var fullName = firstName.concat(lastName);
+console.log(fullName);
+
+var text = " is from ";
+
+var whereFrom = fullName.concat(text,birthPlace);
+console.log(whereFrom);
 
 
+var mariahCareyAge = " At the age of 46";
+var favSneaker = " wearing her fancy Vans ";
+var favLoveSong = " sang endless love ";
+var coffeeShop = " at the Starbucks ";
+
+var mariahStory = mariahCareyAge.concat(favSneaker,favLoveSong,coffeeShop);
+console.log(mariahStory);
 
 /**
 * #9 Arithmetic
@@ -106,6 +192,24 @@ At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 * Mulitply the two variables and store it to a new variable named `product`.
 * Divide the two variables and store it to a new variable named `quotient`.
 * What is the remainder when you divide num1 by num2? Print your answer to the console.
+*/
+
+var num1 = 10
+var num2 = 5
+
+var sum = num1 + num2;
+console.log(sum);
+
+var difference = num1 - num2;
+console.log(difference);
+
+var product = num1 * num2;
+console.log(product);
+
+var quotient = num1 / num2;
+console.log(quotient);
+
+console.log("2")
 
 
 
@@ -129,6 +233,22 @@ At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 * 3>2 6>3 (use and)
 * 7>2 8<5 (use and)
 * Declare variables and print the results to the console. What are the differences between the three and why?
+*/
+var isStrictlyEqual = "Tacocat" === "tacocat";
+console.log(isStrictlyEqual);
+
+var isLooselyEqual = "Tacocat" == "tacocat";
+console.log(isLooselyEqual);
+//
+var sameNum = "5" === 5;
+console.log(sameNum);
+
+var sameNumba = "5" == 5;
+console.log(sameNumba);
+
+
+
+
 
 
 
@@ -143,7 +263,20 @@ At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 
 * Write 5 different assignment statements and `console.log()` the value of the variable after each
 * assignment statement to show the current value. REMEMBER: an assignment is DIFFERENT from a declaration.
-*
+*/ 
+var myBox = 3
+myBox += 3
+console.log(myBox);
+myBox -= 3
+console.log(myBox);
+myBox *= 3
+console.log(myBox);
+myBox %= 3
+console.log(myBox);
+myBox /= 3
+console.log(myBox);
+
+
 
 /**
 * Final Boss 
@@ -169,4 +302,13 @@ At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 * This function should return a String along the lines of, "Tomatoes and Cheese make a Pizza!"
 * if invoked in this way -> cook("Tomatoes", "Cheese", "Pizza");
 **/
+var ingredient = "blueberry";
 
+function bakePie(ingredient){
+	return "Today's special " + ingredient + "pie";
+
+
+
+	console.log(bakePie);
+
+}
