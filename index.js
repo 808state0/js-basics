@@ -252,6 +252,7 @@ console.log(sameNumba);
 
 
 
+
 /**
 * #11
 * Assignments
@@ -265,15 +266,15 @@ console.log(sameNumba);
 * assignment statement to show the current value. REMEMBER: an assignment is DIFFERENT from a declaration.
 */ 
 var myBox = 3
-myBox += 3
+myBox +=3
 console.log(myBox);
 myBox -= 3
 console.log(myBox);
-myBox *= 3
+myBox*= 3
 console.log(myBox);
-myBox %= 3
+myBox%= 3
 console.log(myBox);
-myBox /= 3
+myBox/= 
 console.log(myBox);
 
 
@@ -302,13 +303,29 @@ console.log(myBox);
 * This function should return a String along the lines of, "Tomatoes and Cheese make a Pizza!"
 * if invoked in this way -> cook("Tomatoes", "Cheese", "Pizza");
 **/
-var ingredient = "blueberry";
+
 
 function bakePie(ingredient){
-	return "Today's special " + ingredient + "pie";
+	return "Today's special " + ingredient + " pie ";
 
 
 
-	console.log(bakePie);
+
+
 
 }
+var pieResult= (bakePie);
+console.log(pieResult("strawberry"));
+
+
+function jump(height){
+	return "You jumped " + height + " feet high! "
+}
+var jumpResult = (jump);
+console.log(jumpResult("20"));
+
+function cook(ingredient1, ingredient2, recipeName){
+	return ingredient1 + " and " + ingredient2 + " make a " + recipeName
+
+}
+console.log(cook("Tomatoes", "Cheese", "Pizza"));
